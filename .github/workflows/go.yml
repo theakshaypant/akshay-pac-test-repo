@@ -5,6 +5,12 @@ name: Go
 
 on:
   workflow_dispatch:
+    inputs:
+      test_param:
+        description: "Build and test the project"
+        required: true
+        type: string
+        default: "Hello, World!"
 
 jobs:
 
